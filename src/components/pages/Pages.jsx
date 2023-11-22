@@ -47,10 +47,10 @@ function Pages() {
       }
 
       // Üniversite mezunu ise %3 zam
-      if (educationLevel === "university") {
+      if (educationLevel === "Üniversite") {
         addedSalary += addedSalary * 0.03;
       }
-
+    
       // cocuk sayısına göre %2 zam
       const childCountSalary = addedSalary * 0.02 * childCount;
       addedSalary += childCountSalary;
@@ -79,7 +79,7 @@ function Pages() {
     if (yearsOfWork >= 10) {
       addedSalary += addedSalary * 0.1;
     }
-    if (educationLevel === "university") {
+    if (educationLevel === "Üniversite") {
       addedSalary += addedSalary * 0.03;
     }
     addedSalary += addedSalary * zamRatio;
